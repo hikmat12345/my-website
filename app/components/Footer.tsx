@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
       <footer className=" text-white py-4">
-        <div className="container mx-auto text-center flex justify-between px-9">
+        <div className="container mx-auto text-center flex justify-between px-9 mobile-block">
           {/* Social Media Links */}
           <div className="flex justify-center space-x-6 mb-2">
             <a

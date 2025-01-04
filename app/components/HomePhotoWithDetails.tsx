@@ -4,7 +4,7 @@ import { data } from "./data-helper";
 const HomePhotoWithDetails = ({id=""}:{ id: string; } ) => {
 
   return (
-    <div id={id} className="flex flex-col md:flex-row items-center md:items-start justify-center  space-y-8 md:space-y-0 md:space-x-8 py-20  gap-4">
+    <div id={id} className="flex mobile-space flex-col md:flex-row items-center md:items-start justify-center  space-y-8 md:space-y-0 md:space-x-8 py-20  gap-4">
       {/* Photo Section */}
       <div className="home-photo relative w-96 h-96 bg-white rounded-full border-[14px] border-white overflow-hidden box-shadow ">
         <div
@@ -17,7 +17,7 @@ const HomePhotoWithDetails = ({id=""}:{ id: string; } ) => {
       </div>
 
       {/* Details Section */}
-      <div className="text-center md:text-left max-w-xl pt-16">
+      <div className="text-center mobile-space md:text-left max-w-xl pt-16">
         {/* Name */}
         <h2 className="text-2xl font-bold text-gray-800">{data.name}</h2>
 

@@ -125,3 +125,19 @@ body {
     opacity: 0;
   }
 }
+
+@media (max-width: 1000px) {
+  .grid-box {
+    width: 100%;
+  }
+  .mobile-space{
+    padding: 2px;
+  }
+  .mobile-block{
+    display: block;
+  }
+  .home-photo{
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -70,7 +70,7 @@ export default function Home() {
       <div id="contents" style={{ visibility: 'hidden' }}>
 
         <Header />
-        <main className="container mx-auto mt-8 px-24">
+        <main className="container mx-auto mt-8 px-24 mobile-space">
           <HomePhotoWithDetails id="about" />
           <WhatIDo id="what-i-do" />
           <Timeline id="edu-exp" />

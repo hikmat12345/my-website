@@ -33,7 +33,7 @@ const Timeline = ({id=""}:{ id: string; } ) => {
   );
 
 return (
-    <div id={id} className="container mx-auto px-4 py-8 flex">
+    <div id={id} className="container mx-auto px-4 py-8 flex mobile-block">
         {/* Education Section */}
         {renderTimeline({ title: "Education", data: educationData })}
 

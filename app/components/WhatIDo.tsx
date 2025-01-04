@@ -25,7 +25,7 @@ const WhatIDo = ({id=""}:{ id: string; }) => {
         {/* Service Cards */}
         <div className="flex flex-wrap">
           {services.map((service, index) => (
-            <div key={index} className="p-6 transition-shadow flex w-1/2 gap-8">
+            <div key={index} className="p-6 transition-shadow flex  sm:w-full grid-box gap-8">
               <div className="flex justify-center mb-4">
                 {service.icon == "fa-react" && (
                   <FaReact className="text-4xl text-blue-500" />
