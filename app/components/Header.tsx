@@ -4,9 +4,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   // smooth scrool to the section
-  const handleMenuClick = (e: any) => {
+  const handleMenuClick = (e:any) => {
     e.preventDefault();
-    const target = e.target.getAttribute("href");
+    const target = (e.target).getAttribute("href");
     const offsetTop = document.querySelector(target)?.offsetTop;
     window.scrollTo({
       top: offsetTop,

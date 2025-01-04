@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import { certificatesData } from "./data-helper";
+import Image from 'next/image'
 
 const Certificates = ({id=""}:{ id: string; } ) => {
 
@@ -19,7 +20,9 @@ const Certificates = ({id=""}:{ id: string; } ) => {
             <div className="flex items-center p-4">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <img
+              <Image 
+                  width={800}
+                  height={500} 
                   src={cert.logo}
                   alt="Logo"
                   className="w-16 h-16 object-contain rounded-md"

@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { projects } from "./data-helper";
