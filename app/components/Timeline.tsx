@@ -1,13 +1,13 @@
- import SectionTitle from "./SectionTitle";
+import SectionTitle from "./SectionTitle";
 import { educationData, experienceData } from "./data-helper";
 
-const Timeline = ({id=""}:{ id: string; } ) => {
+const Timeline = ({ id = "" }: { id: string; }) => {
 
-  const renderTimeline = ({title, data}: {title: string, data: any[]}) => (
+  const renderTimeline = ({ title, data }: { title: string, data: { period: string; company: string; title: string; description: string }[] }) => (
     <div className="mb-12">
       {/* Section Title */}
       <div className="mb-6">
-       <SectionTitle title={title} />
+        <SectionTitle title={title} />
       </div>
 
       {/* Timeline */}
@@ -32,15 +32,15 @@ const Timeline = ({id=""}:{ id: string; } ) => {
     </div>
   );
 
-return (
+  return (
     <div id={id} className="container mx-auto px-4 py-8 flex mobile-block">
-        {/* Education Section */}
-        {renderTimeline({ title: "Education", data: educationData })}
+      {/* Education Section */}
+      {renderTimeline({ title: "Education", data: educationData })}
 
-        {/* Experience Section */}
-        {renderTimeline({ title: "Experience", data: experienceData})}
+      {/* Experience Section */}
+      {renderTimeline({ title: "Experience", data: experienceData })}
     </div>
-);
+  );
 };
 
 export default Timeline;

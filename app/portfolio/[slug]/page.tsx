@@ -1,6 +1,7 @@
 "use client"
 import { useRouter } from 'next/router';
 import React from 'react';
+import Image from 'next/image';
 
 const PortfolioDetail = () => {
   const router = useRouter();
@@ -33,7 +34,7 @@ const PortfolioDetail = () => {
     }
   ];
 
-  const item = portfolioItems.find((i:any) => i.slug === slug);
+  const item = portfolioItems.find((i: { id: number; title: string; image: string; category: string; description: string; slug?: string | string[] }) => i.slug === slug);
 
   if (!item) {
     return <p>Loading...</p>; // Show loading state if the item isn't found
@@ -44,7 +45,7 @@ const PortfolioDetail = () => {
       <h1 className="text-3xl font-semibold">{item.title}</h1>
       <p className="text-lg text-gray-700">{item.category}</p>
       <div className="my-6">
-        <img src={item.image} alt={item.title} className="w-full h-auto rounded-md shadow-lg" />
+        <Image src={item.image} alt={item.title} width={1200} height={800} className="w-full h-auto rounded-md shadow-lg" unoptimized />
       </div>
       <p className="text-lg text-gray-800">{item.description}</p>
     </div>

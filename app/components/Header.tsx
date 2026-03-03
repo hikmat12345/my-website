@@ -1,16 +1,16 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { socialLinks } from "./data-helper";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   // smooth scrool to the section
-  const handleMenuClick = (e:any) => {
+  const handleMenuClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const target = (e.target).getAttribute("href");
-    const offsetTop = document.querySelector(target)?.offsetTop;
+    const target = e.currentTarget.getAttribute("href");
+    const offsetTop = target ? (document.querySelector(target) as HTMLElement | null)?.offsetTop : undefined;
     window.scrollTo({
       top: offsetTop,
       behavior: "smooth",
