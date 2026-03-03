@@ -11,10 +11,10 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   // Use an array to extend multiple configurations
-  ...compat.extends([
+  ...compat.extends(
     "next/core-web-vitals",
     "next/typescript",
-  ]),
+  ),
   {
     rules: {
       // Custom rule configuration
