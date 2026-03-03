@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import SkillsSection from "./components/SkillsSection";
 import Timeline from "./components/Timeline";
 import WhatIDo from "./components/WhatIDo";
+import GitHubProjects from "./components/GitHubProjects";
 
 export default function Home() {
   const [showScrollButton , setShowScrollButton] = React.useState(false)
@@ -77,6 +78,7 @@ export default function Home() {
           <Certificates id="certificates" />
           <SkillsSection id="skills" />
           <Portfolio id="portfolio" />
+          <GitHubProjects id="github-projects" />
            
           {showScrollButton && (
           <button

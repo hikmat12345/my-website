@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { projects } from "./data-helper";
@@ -27,9 +28,7 @@ const Portfolio = ({id=""}:{ id: string; } ) => {
               </svg>
             </span>
             <p className="mt-4 text-grayblack">
-             {/* refine version 
-              */}
-              Here are some of the projects I've worked in the start of my development journey. I will be adding more professional and complex projects soon.
+              Professional and enterprise projects showcasing expertise in React.js, Next.js, and full-stack development. For more projects, see the GitHub Projects section below.
             </p>
           </div>
           <div className="w-full flex flex-wrap justify-center -mx-4">
@@ -38,11 +37,10 @@ const Portfolio = ({id=""}:{ id: string; } ) => {
                 <li className="mb-1">
                   <button
                     onClick={() => handleProject("all")}
-                    className={`px-6 py-2 border-2 border-green text-grayblack  rounded-full shadow-md hover:bg-green
-                    ${
+                    className={`px-6 py-2 border-2 border-green text-grayblack rounded-full shadow-md hover:bg-green transition-colors ${
                       showCard === "all"
-                        ? "bg-green  text-white"
-                        : "inactiveClasses"
+                        ? "bg-green text-white"
+                        : "hover:text-green"
                     }`}
                   >
                     All Projects
@@ -50,35 +48,23 @@ const Portfolio = ({id=""}:{ id: string; } ) => {
                 </li>
                 <li className="mb-1">
                   <button
-                    onClick={() => handleProject("websites")}
-                    className={`px-6 py-2 border-2 border-green text-grayblack  rounded-full shadow-md hover:bg-green ${
-                      showCard === "websites"
-                        ? "bg-green  text-white"
-                        : "inactiveClasses"
-                    }`}
-                  >
-                    Websites
-                  </button>
-                </li>
-                <li className="mb-1">
-                  <button
                     onClick={() => handleProject("web-apps")}
-                    className={`px-6 py-2 border-2 border-green text-grayblack  rounded-full shadow-md hover:bg-green ${
+                    className={`px-6 py-2 border-2 border-green text-grayblack rounded-full shadow-md hover:bg-green transition-colors ${
                       showCard === "web-apps"
-                        ? " bg-green text-white"
-                        : "inactiveClasses"
+                        ? "bg-green text-white"
+                        : "hover:text-green"
                     }`}
                   >
-                    FE (Web-Apps)
+                    Web Applications
                   </button>
                 </li>
                 <li className="mb-1">
                   <button
                     onClick={() => handleProject("mobile-apps")}
-                    className={`px-6 py-2 border-2 border-green text-grayblack  rounded-full shadow-md hover:bg-green ${
+                    className={`px-6 py-2 border-2 border-green text-grayblack rounded-full shadow-md hover:bg-green transition-colors ${
                       showCard === "mobile-apps"
-                        ? "bg-green  text-white"
-                        : "inactiveClasses"
+                        ? "bg-green text-white"
+                        : "hover:text-green"
                     }`}
                   >
                     Mobile Apps
@@ -87,13 +73,13 @@ const Portfolio = ({id=""}:{ id: string; } ) => {
                 <li className="mb-1">
                   <button
                     onClick={() => handleProject("other")}
-                    className={`px-6 py-2 border-2 border-green text-grayblack  rounded-full shadow-md hover:bg-green                    ${
+                    className={`px-6 py-2 border-2 border-green text-grayblack rounded-full shadow-md hover:bg-green transition-colors ${
                       showCard === "other"
-                        ? "bg-green  text-white"
-                        : "inactiveClasses"
+                        ? "bg-green text-white"
+                        : "hover:text-green"
                     }`}
                   >
-                    other
+                    Other
                   </button>
                 </li>
               </ul>
@@ -121,6 +107,7 @@ const Portfolio = ({id=""}:{ id: string; } ) => {
                   buttonHref={project.buttonHref}
                   github={project.github}
                   behance={project.behance}
+                  description={project.description}
                   detailPageLink={project.title
                     .toLowerCase()
                     .replace(/\s/g, "-")}
@@ -155,6 +142,7 @@ const PortfolioCard = ({
   tags,
   github,
   behance,
+  description,
   detailPageLink,
 }: {
   showCard: string;
@@ -166,72 +154,78 @@ const PortfolioCard = ({
   tags: string[];
   github: string;
   behance: string;
+  description?: string;
   detailPageLink?: string;
 }) => {
   return (
-    <div className="relative mb-12">
-      {/* <Link href={`/portfolio/${detailPageLink}`}> */}
-        <div className="overflow-hidden rounded-lg bg-gradientemerald slg:h-60 h-80 portfolio-item relative group shadow-lg transition-transform transform hover:scale-105">
+    <div className="relative mb-12 group h-full cursor-pointer">
+      <div className="h-full rounded-lg overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-green flex flex-col">
+        {/* Image Container */}
+        <div className="relative overflow-hidden h-48 slg:h-40 bg-gray-100">
           <Image
             src={ImageHref}
-            alt="portfolio"
-            className="w-full"
+            alt={title}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             width={500}
-            height={500}
+            height={300}
           />
-        </div>
-        <div className="bg-gray-100 relative z-10 px-3 bottom-5 text-center rounded-lg shadow-lg slg:mx-2 mx-7 py-2 bg-slate-100">
-          <h3 className="mb-2 text-[16px] font-semibold text-blacktext ">{title}</h3>
-          {/* <div className="flex justify-center mmd:flex-wrap mb-1">
-            {tags?.map((category, index) => (
-              <span
-                key={index}
-                className={`mr-1 pt-1 text-xs h-6 ${
-                  category.length == 3
-                    ? "w-8"
-                    : category.length <= 8
-                    ? "w-16"
-                    : "w-20"
-                } font-semibold text-white rounded-full border-l   bg-green hover:bg-slate-300 hover:text-gray-500 cursor-pointer`}
-              >
-                {category}
+          {/* Tags Overlay */}
+          <div className="absolute top-3 left-3 right-3 flex flex-wrap gap-1">
+            {tags?.slice(0, 3).map((tag, index) => (
+              <span key={index} className="text-xs font-semibold bg-green text-white px-2 py-1 rounded-full">
+                {tag}
               </span>
             ))}
           </div>
-          <div className="flex justify-center flex-wrap mb-1">
-             <Link
-              target="_blank"
-              href={buttonHref}
-              className="hover:bg-slate-200 mr-2  inline-block text-grayblack  py-1 text-sm font-semibold transition border rounded-md border-gray-400 slg:px-2 px-4 text-body-color hover:border-primary hover:bg-primary hover:text-slate-700"
-            >
-              {button}
-            </Link> 
-             {behance !== "" && (
+        </div>
+
+        {/* Content Container */}
+        <div className="flex-1 p-4 flex flex-col justify-between">
+          <div>
+            <h3 className="mb-2 text-lg font-semibold text-blacktext group-hover:text-green transition-colors">
+              {title}
+            </h3>
+            {description && (
+              <p className="text-xs text-grayblack mb-3 line-clamp-2">
+                {description}
+              </p>
+            )}
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex flex-wrap gap-2 mt-4">
+            {buttonHref !== "#" && (
               <Link
                 target="_blank"
                 href={buttonHref}
-                className="hover:bg-slate-200 mr-2  inline-block text-grayblack  py-1 text-sm font-semibold transition border rounded-md slg:px-2 px-2 border-gray-400 text-body-color hover:border-primary hover:bg-primary hover:text-slate-700"
+                className="flex-1 text-center px-3 py-2 text-xs font-semibold rounded-md border-2 border-green text-green bg-white hover:bg-green hover:text-white transition-all duration-200"
               >
-                Portfolio
+                {button}
               </Link>
-            )} 
-             {github !== "" ? (
+            )}
+            {github !== "" && (
               <Link
                 target="_blank"
                 href={github}
-                className="hover:bg-slate-200 mr-2  inline-block text-grayblack  py-1 text-sm font-semibold transition border rounded-md slg:px-2 px-4 border-gray-400 text-body-color hover:border-primary hover:bg-primary hover:text-slate-700"
+                className="flex-1 text-center px-3 py-2 text-xs font-semibold rounded-md border-2 border-gray-400 text-grayblack hover:border-green hover:text-green transition-all duration-200"
+                title="View GitHub Repository"
               >
-                Github
+                GitHub
               </Link>
-            ) : (
-              <div className="hover:bg-slate-200 mr-2  border-gray-400 inline-block text-grayblack  py-1 text-sm font-semibold transition border rounded-md slg:px-2 px-2 text-body-color hover:border-green hover:bg-primary hover:text-slate-700">
-                {" "}
-                Code Privated
-              </div>
-            )} 
-          </div> */}
+            )}
+            {behance !== "" && (
+              <Link
+                target="_blank"
+                href={behance}
+                className="flex-1 text-center px-3 py-2 text-xs font-semibold rounded-md border-2 border-gray-400 text-grayblack hover:border-green hover:text-green transition-all duration-200"
+                title="View Behance Portfolio"
+              >
+                Behance
+              </Link>
+            )}
+          </div>
         </div>
-      {/* </Link> */}
+      </div>
     </div>
   );
 };

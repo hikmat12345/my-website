@@ -62,9 +62,7 @@ const WhatIDo = ({id=""}:{ id: string; }) => {
                 <h3 className="text-[16px] text-left font-semibold text-blacktext mb-2">
                   {service.title}
                 </h3>
-                <p className="text-grayblack text-left text-sm">
-                  <div dangerouslySetInnerHTML={{ __html: service.description }} />
-                </p>
+                <div className="text-grayblack text-left text-sm" dangerouslySetInnerHTML={{ __html: service.description }} />
               </div>
             </div>
           ))}

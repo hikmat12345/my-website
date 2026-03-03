@@ -1,18 +1,20 @@
 export const projects = (showCard: string) =>{
     
     return [
-      {
-        id: 1,
-        tags: ["web-apps", "Next.js", "Themed", "TypeScript"],
-        category:"web-apps",
-        ImageHref: "/images/best-tailwind-templates.webp",
-        title: "Dogwood Analytic",
-        button: "Demo",
-        buttonHref: "https://white-meadow-08a741110.3.azurestaticapps.net/",
-        github:"https://github.com/hikmat12345/dw-analytic",
-        behance:"https://www.behance.net/gallery/173373739/Dogwood-analytic",
-        showCard: showCard,
-      },
+       {
+      id: 1,
+      tags: ["web-apps", "AI", "Python", "FastAPI"],
+      category:"web-apps",
+      ImageHref: "/images/veroxos.png",
+      title: "Veroxos",
+      button: "Demo",
+      buttonHref: "https://veroxos.com",
+      github:"https://github.com/hikmat12345/veroxos-backend-services",
+      behance:"",
+      showCard: showCard,
+      description: "Veroxos is an expance management platform that provides AI-powered code review automation for Bitbucket repositories, enhancing code quality and development efficiency.",
+    }, 
+  
       {
         id: 2,
         tags: ["web-apps",  "Next.js", "MUI", "TypeScript"],
@@ -25,8 +27,60 @@ export const projects = (showCard: string) =>{
         behance:"https://www.behance.net/gallery/137288555/Service-based-React-app",
         showCard: showCard,
       },
+              {
+        id: 1,
+        tags: ["web-apps", "Next.js", "Python", "TypeScript"],
+        category:"web-apps",
+        ImageHref: "/images/best-tailwind-templates.webp",
+        title: "Dogwood Analytic",
+        button: "Demo",
+        buttonHref: "https://dogwoodsuite.com/",
+        github:"https://github.com/hikmat12345/dw-analytic",
+        behance:"https://www.behance.net/gallery/173373739/Dogwood-analytic",
+        description: "Data analytics dashboard built with Next.js and Tailwind CSS, featuring interactive visualizations and customizable themes for enhanced data insights.",
+        showCard: showCard,
+      },
+    {
+      id: 2,
+      tags: ["web-apps", "Enterprise", "Nextjs", "Node.js"],
+      category:"web-apps",
+      ImageHref: "/images/cscs.jpg",
+      title: "CSCS Platform",
+      button: "Demo",
+      buttonHref: "https://www.cscs.uk.com/",
+      github:"",
+      behance:"",
+      description: "CSCS Construction Skills Certification Scheme platform for construction industry workforce management and certification",
+      showCard: showCard,
+    },
+    {
+      id: 18,
+      tags: ["web-apps", "AI", "Nextjs", "Node.js"],
+      category:"web-apps",
+      ImageHref: "/images/artbase-ai.png",
+      title: "Artbase.AI",
+      button: "Demo",
+      buttonHref: "https://artbase.ai",
+      github:"",
+      behance:"",
+      description: "Video editing platform that uses AI to automate video generation and editing processes, enabling users to create professional-quality videos with ease.",
+      showCard: showCard,
+    },
+
       {
         id: 3,
+        tags: ["web-apps", "React", "Tailwind"],
+        category:"web-apps",
+        ImageHref: "/images/dr-clinica.png",
+        title: "ClinicsHub",
+        button: "Demo",
+        buttonHref: "https://clinicshub.app/",
+        github:"https://github.com/hikmat12345/dr-clinica-customer",
+        behance:"https://www.behance.net/gallery/173374311/Dr-clinica-partner",
+        showCard: showCard,
+      },
+      {
+        id: 66,
         tags: ["web-apps", "React", "Tailwind"],
         category:"web-apps",
         ImageHref: "/images/dr-clinica.png",
@@ -62,92 +116,8 @@ export const projects = (showCard: string) =>{
         behance:"",
         showCard: showCard,
       },
-    {
-      id: 10,
-      tags: ["website", "wordpress",  "Own theme", "php"],
-      category:"websites",
-      ImageHref: "/images/dermaflage.jpg",
-      title: "Dermaflage",
-      button: "Demo",
-      buttonHref: "https://dermaflage.com/",
-      github:"",
-      behance:"",
-      showCard: showCard,
-    },
-     {
-      id: 10,
-      tags: ["website", "wordpress",  "Own theme", "php"],
-      category:"websites",
-      ImageHref: "/images/philiptweedi.png",
-      title: "Philip Tweedie & Company",
-      button: "Demo",
-      buttonHref: "https://philiptweedie.com/",
-      github:"",
-      behance:"https://www.behance.net/gallery/111344511/Philip-Tweedie-Property-web-Site",
-      showCard: showCard,
-    },
-     {  id  : 11,
-      tags: ["website", "wordpress",  "Own theme", "php"],
-      category:"websites",
-      ImageHref: "/images/silver-dollar.png",
-      title: "Silver Dollar Financial",
-      button: "Demo",
-      buttonHref: "https://silverdollarfinancial.com/",
-      github:"",
-      behance:"https://www.behance.net/gallery/93288835/httpssilverdollarfinancialco-Silver-Dollar-Finance",
-      showCard: showCard,
-
-    }, 
-    {
-      id: 12,
-      tags: ["website", "wordpress",  "woocomerce", "php"],
-      category:"websites",
-      ImageHref: "/images/armagh-sport.png",
-      title: "Armagh Sports and Trophies",
-      button: "Demo",
-      buttonHref: "https://www.buytrophies.ie/",
-      github:"",
-      behance:"https://www.behance.net/gallery/114077791/Armagh-sports",
-      showCard: showCard
-    },
-   
-    {
-      id: 13,
-      tags: ["website", "wordpress",  "Own theme", "php"],
-      category:"websites",
-      ImageHref: "/images/vms.png",
-      title: "Velocity Merchant Services",
-      button: "Demo",
-      buttonHref: "https://www.getvms.com/",
-      github:"",
-      behance:"https://www.behance.net/gallery/96833213/Velocity-Merchant-Service-httpswwwgetvmscom",
-      showCard: showCard
-    },
-     {
-     id: 14,
-      tags: ["website", "wordpress",  "Own theme", "php"],
-      category:"websites",
-      ImageHref: "/images/pst.png",
-      title: "Pure Speech Technology",
-      button: "Demo",
-      buttonHref: "https://www.purespeechtechnology.com/",
-      github:"",
-      behance:"https://www.behance.net/gallery/92660373/PureSpeechTechnolgoy-httpswwwpurespeechtechnology",
-      showCard: showCard
-    },
     
-    {
-      id: 15,
-      tags: ["other"],
-      category:"other",
-      ImageHref: "/images/pst.png",
-      title: "Creative",
-      button: "Internal",
-      buttonHref: "#",
-      github:"",
-      behance:"",
-      showCard: showCard,
-    }, 
+    
     {
       id: 6,
       tags: ["web-apps",  "Next.js", "Bootstrap"],
@@ -195,14 +165,14 @@ export const projects = (showCard: string) =>{
       github:"",
       behance:"",
       showCard: showCard,
-    },
+    }
   ]
 }
 
 export const data = {
-    name: "Hikmat",
+    name: "Hikmat Ullah Khan",
     description:
-      "I am Hikmat, a full-stack developer with over 5 years of experience specializing in TypeScript. I excel in building scalable web applications with modern JavaScript frameworks like React, Next, Angular, Vue and Node Js. Skilled in TypeScript, API development, and database management (SQL, NoSQL). Experienced in optimizing codebases and collaborating with agile teams. Passionate about clean code, emerging technologies, and delivering user-focused solutions.",
+      "Senior Full-Stack Developer with 6+ years of experience specializing in modern web technologies. Expert in React.js, Next.js, Node.js, and Python FastAPI. Proficient in AI integration, vector databases, Retrieval-Augmented Generation (RAG), and prompt engineering. AWS Certified Developer with extensive cloud solutions expertise. Passionate about building scalable, secure, and high-performance applications with focus on user experience and code quality.",
     resumeLink: "/resume.pdf",
     contactLink: "https://calendly.com/hikmatullahit/30min",
   };
@@ -237,6 +207,8 @@ export const skillsData :{title: string, tools: {name: string, icon: string, ski
           skillSet: [
             {name:"Express.js",skillNameLink : "https://expressjs.com/",},
             {name:"Nest.js",skillNameLink : "https://nestjs.com/",},
+            {name:"Python FastAPI",skillNameLink : "https://fastapi.tiangolo.com/",},
+            {name:"Django",skillNameLink : "https://www.djangoproject.com/",},
             {name:"TypeScript",skillNameLink : "https://www.typescriptlang.org/",},
             {name:"ORMs",skillNameLink : "https://www.prisma.io/",},
             {name:"MySQL",skillNameLink : "https://www.mysql.com/",},
@@ -247,8 +219,6 @@ export const skillsData :{title: string, tools: {name: string, icon: string, ski
             {name:"Socket & WebRTC",skillNameLink : "https://socket.io/",},
             {name : "Serverless", skillNameLink : "https://www.serverless.com/",},
             {name: "DynamoDB", skillNameLink : "https://aws.amazon.com/dynamodb/",},
-            {name:"Wp PHP",skillNameLink : "https://developer.wordpress.org/themes/",},
-            {name: "HubSpot CMS", skillNameLink : "https://www.hubspot.com/products/cms",},
           ]
         },
         {
@@ -279,28 +249,34 @@ export const skillsData :{title: string, tools: {name: string, icon: string, ski
 
  export const experienceData = [
     {
+      period:  "2024 - Present",
+      company: "TEO",
+      title: "Senior Frontend Engineer - React.js & Python FastAPI",
+      description: "Senior Full-stack Developer specializing in React.js and Python FastAPI with expertise in AI-powered features. Integrated AI-powered customer support systems using LLM technology, developed offline-capable chat modules, and created code review automation for Bitbucket. Working on enterprise applications with vector databases, RAG implementations, and Generative AI solutions.",
+    },
+    {
       period:  "2023 - Present",
       company: "Selteq IT Solution",
       title: "Fullstack Developer",
-      description: "Working as a Fullstack Developer at Selteq IT Solution, Islamabad. Responsible for developing scalable web applications using modern JavaScript frameworks like React, Next, Angular, and Node.js. Collaborating with cross-functional teams to deliver high-quality software solutions. Implementing secure and efficient code practices to optimize application performance.",
+      description: "Working as a Fullstack Developer at Selteq IT Solution, Islamabad. Responsible for developing scalable web applications using modern JavaScript frameworks like React, Next, Angular, and Node.js. Collaborating with cross-functional teams to deliver high-quality software solutions.",
     }, 
     {
       period:  "2022 - 2023",
       company: "VOUS(LeadVy)",
       title: "Fullstack Software Engineer",
-      description: "Worked as a Fullstack Software Engineer at VOUS(LeadVy), Dubai. Developed and maintained web applications using React, Next.js, and Node.js. Implemented RESTful APIs and GraphQL endpoints for secure and efficient communication between services. Collaborated with UX/UI designers to create visually appealing and user-friendly interfaces.",
+      description: "Worked as a Fullstack Software Engineer at VOUS(LeadVy), Dubai. Developed and maintained web applications using React, Next.js, and Node.js. Implemented RESTful APIs and GraphQL endpoints for secure and efficient communication between services.",
     },
     {
       period:  "2020 - 2022",
       company: "AIVATEK",
       title: "Fullstack Software Engineer",
-      description: "Worked as a Fullstack Software Engineer at AIVATEK, Islamabad. Developed and maintained web applications using React, Angular, and Node.js. Implemented secure and efficient code practices to optimize application performance. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+      description: "Worked as a Fullstack Software Engineer at AIVATEK, Islamabad. Developed and maintained web applications using React, Angular, and Node.js. Implemented secure and efficient code practices to optimize application performance.",
     },
     {
       period:  "2019 - 2020",
       company: "Cyber Peak Solution",
       title: "Frontend Developer",
-      description: "Worked as a Frontend Developer at Cyber Peak Solution, Rawalpindi. Developed and maintained web applications using React, Angular, and Vue.js. Collaborated with UX/UI designers to create visually appealing and user-friendly interfaces. Implemented secure and efficient code practices to optimize application performance.",
+      description: "Worked as a Frontend Developer at Cyber Peak Solution, Rawalpindi. Developed and maintained web applications using React, Angular, and Vue.js. Collaborated with UX/UI designers to create visually appealing and user-friendly interfaces.",
     }
   ];
 
@@ -329,7 +305,7 @@ export const skillsData :{title: string, tools: {name: string, icon: string, ski
     },
     {
       title: "Languages and Tools",
-      description: "Proficient in <span style=' color: #54ca95; font-weight: bold;'>primary languages:</span> like <strong style=' color: #333333; font-weight: 500;'>TypeScript</strong>, <strong style=' color: #333333; font-weight: 500;'>JavaScript</strong>, <strong style=' color: #333333; font-weight: 500;'>CSS</strong>, and <strong style=' color: #333333; font-weight: 500;'>HTML</strong>, with a strong focus on developing scalable and efficient applications. Familiar with tools like <strong style=' color: #333333; font-weight: 500;'>Angular</strong>, <strong style=' color: #333333; font-weight: 500;'>Node.js</strong>, <strong style=' color: #333333; font-weight: 500;'>Nest.js</strong>, <strong style=' color: #333333; font-weight: 500;'>React</strong>, <strong style=' color: #333333; font-weight: 500;'>Next.js</strong>, <strong style=' color: #333333; font-weight: 500;'>Vue.js</strong>, and testing frameworks such as <strong style=' color: #333333; font-weight: 500;'>Jest</strong>, <strong style=' color: #333333; font-weight: 500;'>Mocha</strong>, and <strong style=' color: #333333; font-weight: 500;'>Cypress</strong>. Experience with <span style='color: #3b82f6;font-weight: bold;'>secondary languages:</span> such as <strong style=' color: #333333; font-weight: 500;'>Python</strong> (<strong style=' color: #333333; font-weight: 500;'>Django</strong> & <strong style=' color: #333333; font-weight: 500;'>Flask</strong> with 1 project) and <strong style=' color: #333333; font-weight: 500;'>Java</strong> (<strong style=' color: #333333; font-weight: 500;'>Spring Boot</strong> with 1 project). ",
+      description: "Proficient in <span style=' color: #54ca95; font-weight: bold;'>primary languages:</span> like <strong style=' color: #333333; font-weight: 500;'>TypeScript</strong>, <strong style=' color: #333333; font-weight: 500;'>JavaScript</strong>, <strong style=' color: #333333; font-weight: 500;'>CSS</strong>, and <strong style=' color: #333333; font-weight: 500;'>HTML</strong>. Experienced with <strong style=' color: #333333; font-weight: 500;'>React</strong>, <strong style=' color: #333333; font-weight: 500;'>Next.js</strong>, <strong style=' color: #333333; font-weight: 500;'>Angular</strong>, <strong style=' color: #333333; font-weight: 500;'>Vue.js</strong>, and testing frameworks such as <strong style=' color: #333333; font-weight: 500;'>Jest</strong>, <strong style=' color: #333333; font-weight: 500;'>Mocha</strong>, and <strong style=' color: #333333; font-weight: 500;'>Cypress</strong>. Proficient in <span style='color: #3b82f6;font-weight: bold;'>backend technologies:</span> including <strong style=' color: #333333; font-weight: 500;'>Node.js</strong>, <strong style=' color: #333333; font-weight: 500;'>Express</strong>, <strong style=' color: #333333; font-weight: 500;'>Nest.js</strong>, <strong style=' color: #333333; font-weight: 500;'>Python FastAPI</strong>, <strong style=' color: #333333; font-weight: 500;'>Django</strong>, and <strong style=' color: #333333; font-weight: 500;'>Java Spring Boot</strong>.",
       icon: "fa-code",
     },
     {
@@ -358,20 +334,33 @@ export const skillsData :{title: string, tools: {name: string, icon: string, ski
       icon: "fa-aws",
     },
     {
-      title: "Attractive Frontend UI",
-      description: "Creating visually appealing and user-friendly interfaces to enhance the overall user experience. Expertise includes <strong style=' color: #333333; font-weight: 500;'>Three.js</strong> for 3D graphics, <strong style=' color: #333333; font-weight: 500;'>D3.js</strong> for data visualizations, and theming to ensure consistency and aesthetics across applications.",
+      title: "Attractive Frontend UI & Data Visualization",
+      description: "Creating visually appealing and user-friendly interfaces to enhance the overall user experience. Expertise includes <strong style=' color: #333333; font-weight: 500;'>Tailwind CSS</strong>, <strong style=' color: #333333; font-weight: 500;'>Shadcn/ui</strong>, <strong style=' color: #333333; font-weight: 500;'>Three.js</strong> for 3D graphics, <strong style=' color: #333333; font-weight: 500;'>D3.js</strong> for data visualizations, and <strong style=' color: #333333; font-weight: 500;'>Remotion</strong> for video generation.",
       icon: "fa-paint-brush",
-    },
-    {
-      title: "WordPress Expertise with Theme/Plugin Development",
-      description: "Specialized in developing and managing <strong style=' color: #333333; font-weight: 500;'>WordPress</strong> websites, with expertise in CMS customization, content management, and creating custom themes and plugins using <strong style=' color: #333333; font-weight: 500;'>ACF (Advanced Custom Fields)</strong> and <strong style=' color: #333333; font-weight: 500;'>shortcodes</strong> to extend functionality.",
-      icon: "fa-wordpress",
-    },
-    {
-      title: "HubSpot CMS with Theme/Plugin Development",
-      description: "Specialized in developing and managing HubSpot CMS websites, with expertise in CMS customization, content management, and creating custom themes and plugins to extend functionality.",
-      icon: "fa-cogs"
     }
   ];
+
+export const socialLinks = {
+  github: "https://github.com/hikmat12345",
+  linkedin: "https://linkedin.com/in/hikmatullahkhan",
+  medium: "https://medium.com/@hikmatullahmcs",
+  awsCertificate: "https://cp.certmetrics.com/amazon/en/public/verify/credential/e964a9ce2a214709820a07544730daa0",
+  calendly: "https://calendly.com/hikmatullahit/30min"
+};
+
+export const githubProjects = [
+  { name: "veroxos-backend-services", link: "https://github.com/hikmat12345/veroxos-backend-services", description: "Backend services framework" },
+  { name: "customer-admin-portal-frontend", link: "https://github.com/hikmat12345/customer-admin-portal-frontend", description: "Admin dashboard frontend" },
+  { name: "python-fastapi", link: "https://github.com/hikmateduta-stse/eduta-backend", description: "FastAPI backend services" },
+  { name: "pr-validation-copilot", link: "https://github.com/hikmat12345/pr-validation-copilot", description: "PR validation automation tool" },
+  { name: "code-evaluation", link: "https://github.com/hikmat12345/code-evaluation", description: "Code quality evaluation tool" },
+  { name: "dr-clinica-customer", link: "https://github.com/hikmat12345/dr-clinica-customer", description: "Dr Clinica customer portal" },
+  { name: "dr-clinica-partner", link: "https://github.com/hikmat12345/dr-clinica-partner", description: "Dr Clinica partner portal" },
+  { name: "Expert-Frontend", link: "https://github.com/hikmat12345/Expert-Frontend", description: "Expert platform frontend" },
+  { name: "new-expert", link: "https://github.com/hikmat12345/new-expert", description: "Expert platform - latest version" },
+  { name: "dogwood", link: "https://github.com/hikmat12345/dogwood", description: "Dogwood Analytics" },
+  { name: "fiducia", link: "https://github.com/hikmat12345/fiducia", description: "Fiducia dashboard" },
+  { name: "teaching-ai-nodejs", link: "https://github.com/hikmat12345/teaching-ai-nodejs", description: "AI with Node.js tutorial" },
+];
   
   
